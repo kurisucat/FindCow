@@ -1,21 +1,20 @@
-#mario {
+#objectElement {
     cursor: pointer;
-    content: url(mario.png);
+    content: url(object.png);
     width: 50px;
     opacity: 0.0;
 }
-.alert-box {
+.alert-box { /* 额 弹框我给改成了全屏的乐 */
     position: absolute;
-    width: 200px;
-    height: 100px;
+    width: 100vw;
+    height: 100vh;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    background-color: rgba(218, 213, 213);
-    border-radius: 8px;
+    background-color: rgba(22, 22, 22, 0.2);
 }
 .alert-box::after{
-    content:'Congratulations, you found AVA!';
+    content:'NPK48 [六秒后自动重开]'; /* 这里是胜利之后的弹框 */
     position: absolute;
     left: 50%;
     top: 50%;
